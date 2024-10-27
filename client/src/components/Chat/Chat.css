@@ -1,0 +1,20 @@
+#chat-container {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	/* align-items: center; */
+	height: 100vh;
+	/* background-color: #f0f0f0; */
+
+	i.status-icon {
+		height: 8px;
+		width: 8px;
+		border-radius: 50%;
+		display: inline-block;
+		background-color: #e38968;
+		margin-right: 6px;
+	}
+	i.status-icon.connected {
+		background-color: #86bb71;
+	}
+}

@@ -1,0 +1,23 @@
+@import "./global-variables.css";
+
+#root {
+	/* max-width: 1280px; */
+	margin: 0 auto;
+	flex: 1;
+	height: 100vh;
+	/* padding: 2rem; */
+	text-align: center;
+	background-color: white;
+
+	color: black;
+
+	box-sizing: border-box;
+
+	p {
+		margin: 0;
+	}
+
+	div {
+		box-sizing: border-box;
+	}
+}

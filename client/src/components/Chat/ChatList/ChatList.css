@@ -1,0 +1,45 @@
+/* @import "../../../global-variables.css"; */
+
+#chat-list {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+	overflow-y: auto;
+
+	border-right: 1px solid var(--gray-3);
+
+	.chat-card {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		box-sizing: border-box;
+
+		padding: 8px;
+		cursor: pointer;
+
+		p {
+			margin: 0;
+		}
+		p.title {
+			font-weight: bold;
+		}
+
+		.status-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		&:hover {
+			background-color: var(--gray-2);
+		}
+
+		&.selected {
+			background-color: var(--gray-3);
+		}
+	}
+}
