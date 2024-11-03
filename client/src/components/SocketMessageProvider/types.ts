@@ -12,7 +12,7 @@ export type ServerUser = {
 	messages: ServerUserMessage[];
 };
 
-export type LocalUser = ServerUser & {
+export type LocalUser = Omit<ServerUser, "messages"> & {
 	isSelf: boolean;
 	messages: LocalUserMessage[];
 	hasNewMessages: boolean;
